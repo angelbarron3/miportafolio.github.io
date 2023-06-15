@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Subpágina</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="PORTFOLIO WEB.html">Inicio</a></li>
+        <li><a href="PORTFOLIO WEB.html">Acerca de mí</a></li>
+        <li><a href="PORTFOLIO WEB.html">Portafolio</a></li>
+        <li><a href="PORTFOLIO WEB.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header><script>
+    // Cargar la barra de navegación en index.html utilizando JavaScript
+    const navbarContent = document.getElementById('navbarContent');
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'navbar.html', true);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        navbarContent.innerHTML = xhr.responseText;
+
+        // Agregar la clase 'active' al enlace correspondiente en la barra de navegación
+        const navLinks = navbarContent.querySelectorAll('a');
+        for (let i = 0; i < navLinks.length; i++) {
+          const link = navLinks[i];
+          if (link.getAttribute('href') === window.location.pathname) {
+            link.classList.add('active');
+            break;
+          }
+        }
+      }
+    };
+    xhr.send();
+  </script>
+
+  <!-- Sección de  -->
+    <section>
+		<h2>Portafolio</h2>
+    <div class="grid-container">
+      <!-- Coloca aquí tu retícula de imágenes y videos -->
+      <!-- Ejemplo de una imagen -->
+      <div class="grid-item">
+        <img src="path-to-your-image.jpg" alt="Imagen del portafolio">
+      </div>
+      <!-- Ejemplo de un video -->
+      <div class="grid-item">
+        <video src="path-to-your-video.mp4" controls></video>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Todos los derechos reservados &copy; 2023</p>
+  </footer>
+
+  <!-- Script de JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

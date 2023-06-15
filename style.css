@@ -1,0 +1,182 @@
+/* Estilos CSS para la barra de desplazamiento */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Estilos CSS adicionales */
+
+/* Agrega estilos a la barra de navegación */
+nav {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Estilos CSS para las secciones */
+section {
+  padding: 50px;
+  text-align: center;
+}
+#inicio {
+    background-image: url(Img/FONDO.jpg);
+}
+
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+}
+#acerca .content p {
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+#portafolio {
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Estilos CSS para el footer */
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+}
+#inicio {
+    background-image: url(Img/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#inicio .content h1 {
+    font-family: Evogria;
+    color: #000000;
+    font-variant: small-caps;
+    font-size: 65px;
+    text-align: center;
+    font-weight: bolder;
+}
+#acerca .content h2 {
+    font-family: Azonix;
+    font-variant: small-caps;
+	font-size: 45px;
+	text-align: center;
+}
+#acerca .content p {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-style: normal;
+	font-size:18px; 
+	text-align: center;
+}
+#acerca .content b {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-style: italic;
+}
+#portafolio .content h2 {
+    font-family: "Early GameBoy";
+	font-size: 35px ;
+	text-align: center;
+}
+#contacto .container h2 {
+    font-family: Evogria;
+	font-size: 35px ;
+}
+#contacto .container p {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: normal;
+    font-size: x-large;
+    font-weight: bold;
+	text-align: center;
+}
+.container .contact-links p {
+    color: #00FF30;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.contact-links p a {
+    color: #FC0004;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: large;
+	text-align: center;
+}
+.contact-links p a {
+}
+body footer p {
+    font-size: large;
+    font-weight: lighter;
+	text-align: center;
+}
+.social-icons a {
+    color: #FFFFFF;
+    font-size: x-large;
+}
+nav ul li {
+    color: #FFFFFF;
+    font-family: Evogria;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: lighter;
+    font-size: large;
+}
+.slider .slide img {
+    width: 82%;
+}
+body section h2 {
+    color: #000000;
+    font-family: Evogria;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.slider-container .slider .slide {
+    max-width: 65%;
+    max-height: 173%;
+}

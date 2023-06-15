@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDITORIAL</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="PORTFOLIO WEB.html">Inicio</a></li>
+        <li><a href="PORTFOLIO WEB.html">Acerca de mí</a></li>
+        <li><a href="PORTFOLIO WEB.html">Portafolio</a></li>
+        <li><a href="PORTFOLIO WEB.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header><script>
+    // Cargar la barra de navegación en index.html utilizando JavaScript
+    const navbarContent = document.getElementById('navbarContent');
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'navbar.html', true);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        navbarContent.innerHTML = xhr.responseText;
+
+        // Agregar la clase 'active' al enlace correspondiente en la barra de navegación
+        const navLinks = navbarContent.querySelectorAll('a');
+        for (let i = 0; i < navLinks.length; i++) {
+          const link = navLinks[i];
+          if (link.getAttribute('href') === window.location.pathname) {
+            link.classList.add('active');
+            break;
+          }
+        }
+      }
+    };
+    xhr.send();
+  </script>
+
+  <!-- Sección de  -->
+    <section>
+		<h2>EDITORIAL&nbsp;</h2>
+	    <div><iframe src="https://drive.google.com/file/d/16MJuCZdFCX9J9IHlFuj2a6hX6tfA1dvH/preview" width="640" height="780" allow="autoplay"></iframe>
+	    </div>
+		<div><iframe src="https://drive.google.com/file/d/1l4DPqgtnFKScEkSzIXuQ8pl6CCVifrAL/preview" width="640" height="860" allow="autoplay"></iframe>
+		</div>
+		<div><iframe src="https://drive.google.com/file/d/1vfTmreLp7S2yUyLeqxvkghpVtnVUlANk/preview" width="640" height="480" allow="autoplay"></iframe>
+		</div>
+		<div><iframe src="https://drive.google.com/file/d/1KWfHH5GOl8nKMJljFjVKySSWUt8HG5mP/preview" width="640" height="500" allow="autoplay"></iframe>
+		</div>
+		<div><iframe src="https://drive.google.com/file/d/1h8_lBh6Fh6X2LcMJw0LIL3u7v6TkynxY/preview" width="640" height="600" allow="autoplay"></iframe>
+		</div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Todos los derechos reservados &copy; 2023</p>
+  </footer>
+  <!-- Script de JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
